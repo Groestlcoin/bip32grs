@@ -1,5 +1,5 @@
 let Buffer = require('safe-buffer').Buffer
-let bs58check = require('bs58check')
+let bs58grscheck = require('bs58grscheck')
 let crypto = require('./crypto')
 let ecc = require('tiny-secp256k1')
 let typeforce = require('typeforce')
@@ -93,7 +93,7 @@ BIP32.prototype.toBase58 = function () {
     this.publicKey.copy(buffer, 45)
   }
 
-  return bs58check.encode(buffer)
+  return bs58grscheck.encode(buffer)
 }
 
 BIP32.prototype.toWIF = function () {
@@ -210,7 +210,7 @@ BIP32.prototype.verify = function (hash, signature) {
 }
 
 function fromBase58 (string, network) {
-  let buffer = bs58check.decode(string)
+  let buffer = bs58grscheck.decode(string)
   if (buffer.length !== 78) throw new TypeError('Invalid buffer length')
   network = network || BITCOIN
 

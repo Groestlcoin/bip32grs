@@ -1,11 +1,11 @@
 {
-  "name": "bip32",
+  "name": "bip32grs",
   "version": "1.0.2",
   "description": "A BIP32 compatible library",
   "keywords": [
-    "bip32",
-    "bitcoinjs",
-    "bitcoin",
+    "bip32grs",
+    "groestlcoinjs",
+    "groestlcoin",
     "secp256k1"
   ],
   "main": "index.js",
@@ -21,15 +21,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bitcoinjs/bip32.git"
+    "url": "git+https://github.com/groestlcoin/bip32grs.git"
   },
   "dependencies": {
-    "bs58check": "^2.1.1",
+    "bs58grscheck": "^https://github.com/Groestlcoin/bs58grscheck.git",
     "create-hash": "^1.2.0",
     "create-hmac": "^1.1.7",
     "tiny-secp256k1": "^1.0.0",
     "typeforce": "^1.11.5",
-    "wif": "^2.0.6"
+    "wifgrs": "https://github.com/Groestlcoin/wifgrs.git"
   },
   "devDependencies": {
     "nyc": "^11.7.1",
