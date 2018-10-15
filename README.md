@@ -10,8 +10,8 @@ A [BIP32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki) compat
 
 ## Example
 ``` javascript
-let bip32grs = require('bip32grs')
-let node = bip32grs.fromBase58('xprv9s21ZrQH143K3XpLJrX92hM28H2o1CgVi6HXCWGBXtMkHxSkpxiFcnmzjy5qNyi3QUfSVXXapRT8St3wyLbWux9JysZZgvmvQZ75FUqrakP')
+let bip32 = require('bip32grs')
+let node = bip32.fromBase58('xprv9s21ZrQH143K3XpLJrX92hM28H2o1CgVi6HXCWGBXtMkHxSkpxiFcnmzjy5qNyi3QUfSVXXapRT8St3wyLbWux9JysZZgvmvQZ75FUqrakP')
 
 let child = node.derivePath('m/0/0')
 // ...
