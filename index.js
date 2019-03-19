@@ -3,7 +3,7 @@ let bs58grscheck = require('bs58grscheck')
 let crypto = require('./crypto')
 let ecc = require('tiny-secp256k1')
 let typeforce = require('typeforce')
-let wif = require('wif')
+let wif = require('wifgrs')
 
 let UINT256_TYPE = typeforce.BufferN(32)
 let NETWORK_TYPE = typeforce.compile({
