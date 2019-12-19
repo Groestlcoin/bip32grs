@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var bip32_1 = require("./bip32");
+var bip32_1 = require("./bip32grs");
 exports.fromSeed = bip32_1.fromSeed;
 exports.fromBase58 = bip32_1.fromBase58;
 exports.fromPublicKey = bip32_1.fromPublicKey;

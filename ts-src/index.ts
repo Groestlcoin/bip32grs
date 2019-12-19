@@ -4,4 +4,4 @@ export {
   fromBase58,
   fromPublicKey,
   fromPrivateKey,
-} from './bip32';
+} from './bip32grs';
