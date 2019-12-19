@@ -1,5 +1,5 @@
 import * as crypto from './crypto';
-const bs58check = require('bs58check');
+const bs58grscheck = require('bs58grscheck');
 const ecc = require('tiny-secp256k1');
 const typeforce = require('typeforce');
 const wif = require('wif');
@@ -26,7 +26,7 @@ const NETWORK_TYPE = typeforce.compile({
 });
 
 const BITCOIN: Network = {
-  wif: 0x80,
+  wif: 0x24,
   bip32: {
     public: 0x0488b21e,
     private: 0x0488ade4,
@@ -164,7 +164,7 @@ class BIP32 implements BIP32Interface {
       this.publicKey.copy(buffer, 45);
     }
 
-    return bs58check.encode(buffer);
+    return bs58grscheck.encode(buffer);
   }
 
   toWIF(): string {
@@ -306,7 +306,7 @@ export function fromBase58(
   inString: string,
   network?: Network,
 ): BIP32Interface {
-  const buffer = bs58check.decode(inString);
+  const buffer = bs58grscheck.decode(inString);
   if (buffer.length !== 78) throw new TypeError('Invalid buffer length');
   network = network || BITCOIN;
 
