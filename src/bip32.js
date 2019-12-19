@@ -4,7 +4,7 @@ const crypto = require("./crypto");
 const bs58grscheck = require('bs58grscheck');
 const ecc = require('tiny-secp256k1');
 const typeforce = require('typeforce');
-const wif = require('wif');
+const wif = require('wifgrs');
 const UINT256_TYPE = typeforce.BufferN(32);
 const NETWORK_TYPE = typeforce.compile({
     wif: typeforce.UInt8,

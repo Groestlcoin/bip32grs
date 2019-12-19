@@ -2,7 +2,7 @@ import * as crypto from './crypto';
 const bs58grscheck = require('bs58grscheck');
 const ecc = require('tiny-secp256k1');
 const typeforce = require('typeforce');
-const wif = require('wif');
+const wif = require('wifgrs');
 
 interface Network {
   wif: number;
