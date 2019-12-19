@@ -28,7 +28,16 @@ let bip32 = require('bip32grs')
 let node = bip32.fromBase58('xprv9s21ZrQH143K3XpLJrX92hM28H2o1CgVi6HXCWGBXtMkHxSkpxiFcnmzjy5qNyi3QUfSVXXapRT8St3wyLbWux9JysZZgvmvQZ75FUqrakP')
 
 let child = node.derivePath('m/0/0')
-// ...
+console.log(child)
+//BIP32 {
+//  __D: <Buffer ea 39 8f 84 c7 5d 85 d5 4d 85 e6 84 1e c4 43 30 d4 07 98 f6 97 76 fd 49 54 9e 03 4e 30 af 11 ad>,
+//  __Q: undefined,
+//  chainCode: <Buffer 9f ec e5 30 ff 91 d7 23 82 20 c2 d2 5f 16 ed 29 34 eb b9 31 d2 20 0b 27 c7 8b 35 36 ad 17 d2 c8>,
+//  network: { wif: 36, bip32: { public: 76067358, private: 76066276 } },
+//  __DEPTH: 2,
+//  __INDEX: 0,
+//  __PARENT_FINGERPRINT: 1537180878,
+//  lowR: false }
 ```
 
 ## LICENSE [MIT](LICENSE)
