@@ -1,6 +1,6 @@
 {
   "name": "bip32grs",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "A BIP32 compatible library",
   "keywords": [
     "bip32grs",
@@ -37,7 +37,7 @@
     "tape": "^4.9.0"
   },
   "author": "Daniel Cousens",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/bitcoinjs/bip32/issues"
   }
