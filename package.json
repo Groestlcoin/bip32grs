@@ -24,12 +24,12 @@
     "url": "git+https://github.com/groestlcoin/bip32grs.git"
   },
   "dependencies": {
-    "bs58grscheck": "https://github.com/Groestlcoin/bs58grscheck.git",
+    "bs58grscheck": "^2.1.2",
     "create-hash": "^1.2.0",
     "create-hmac": "^1.1.7",
     "tiny-secp256k1": "^1.0.0",
     "typeforce": "^1.11.5",
-    "wifgrs": "https://github.com/Groestlcoin/wifgrs.git"
+    "wifgrs": "^2.0.6"
   },
   "devDependencies": {
     "nyc": "^11.7.1",
