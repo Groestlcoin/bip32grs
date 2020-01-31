@@ -1,6 +1,6 @@
 {
   "name": "bip32grs",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "A BIP32 compatible library",
   "keywords": [
     "bip32grs",
@@ -41,7 +41,7 @@
     "bs58grscheck": "^2.1.2",
     "create-hash": "^1.2.0",
     "create-hmac": "^1.1.7",
-    "tiny-secp256k1": "^1.1.0",
+    "tiny-secp256k1": "^1.1.3",
     "typeforce": "^1.11.5",
     "wifgrs": "^2.0.6"
   },

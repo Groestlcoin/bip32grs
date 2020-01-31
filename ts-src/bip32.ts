@@ -26,11 +26,15 @@ const NETWORK_TYPE = typeforce.compile({
 });
 
 const BITCOIN: Network = {
-  wif: 0x24,
+  messagePrefix: '\x1CGroestlCoin Signed Message:\n',
+  bech32: 'grs',
   bip32: {
     public: 0x0488b21e,
     private: 0x0488ade4,
   },
+  pubKeyHash: 0x24,
+  scriptHash: 0x05,
+  wif: 0x80,
 };
 
 const HIGHEST_BIT = 0x80000000;
