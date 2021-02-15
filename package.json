@@ -1,6 +1,6 @@
 {
   "name": "bip32grs",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "description": "A BIP32 compatible library",
   "keywords": [
     "bip32grs",
@@ -52,9 +52,9 @@
     "tslint": "^6.1.0",
     "typescript": "3.3.3333"
   },
-  "author": "Daniel Cousens",
+  "author": "Groestlcoin Developers",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bitcoinjs/bip32/issues"
+    "url": "https://github.com/Groestlcoin/bip32grs/issues"
   }
 }
